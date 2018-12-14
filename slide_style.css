@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+  }
+  canvas#viewport { border: 20px solid white; height: 800px; width: 1100px; margin: 80px;}
+
+body{
+    background-color:lightblue;
+    font-family: Verdana,sans-serif;
+}
+
+h1 {
+    background-color: rgb(141, 218, 141);
+}
+
+p {
+    background-color: yellow;
+}
+
+.prev, .next, .start, .stop {
+  margin-top: -22px;
+  color: rgb(223, 73, 178);
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 4px 4px 0;
+  position: absolute;
+  top: 50%;
+  font-weight: bold;
+  width: auto;
+  padding: 16px;
+  user-select: none;
+  cursor: pointer;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/* Position the "start button" to the right */
+.start {
+  right: 500px;
+  border-radius: 4px 4px 4px 4px;
+}
+
+/* Position the "next button" to the middle */
+.stop {
+  right: 300px;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.prev:hover, .next:hover, .start:hover, .stop:hover {
+  background-color: rgb(78, 209, 89);
+}
+
+.transit {
+  width: 80%;
+  height: 80%;
+  -webkit-transition-property: width, height; /* Safari */
+  transition-property: width, height;
+  -webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
+  transition: width 1s, height 1s;
+}
+
+.transit:hover {
+  width: 40%;
+  height: 40%;
+}
+
+.transform{
+  -ms-transform: rotate(30deg); /* IE 9 */
+  -webkit-transform: rotate(30deg); /* Safari */
+  transform: rotate(30deg); /* Standard syntax */
+}

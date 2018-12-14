@@ -1,0 +1,73 @@
+Basic Bash Commands
+
+Change directory to ~/Desktop
+cd ~/Desktop
+
+list files in the current directory
+. means current directory
+ls .
+
+list normal files and directories in your home directory
+~ means home directory
+ls ~
+
+list hidden files in your home folder
+-ah means "all hidden"
+ls -ah ~
+
+list hidden files in your home folder with advanced information like date modified
+-lah means "list all hidden"
+ls -lah ~
+
+Make a new directory ~/a
+mkdir ~/a
+
+If you run mkdir ~/a twice you will get an error
+mkdir: /Users/user/a: File exists. You can remove it by running
+rm -r ~/a
+And then run
+mkdir ~/a
+again
+
+
+Print the string "Hello, World!"
+echo "Hello, World"
+
+Save the string "Hello, World!" to a new file ~/a/file.txt
+> means "Take the output of a program, and write it to a file"
+echo "Hello, World" > ~/a/file.txt
+
+Print the contents of ~/a/file.txt
+cat ~/a/file.txt
+
+Make a new directory ~/b
+mkdir ~/b
+
+Copy ~/a/file.txt to ~/b/file2.txt
+cp ~/a/file.txt ~/b/file2.txt
+
+Copy all files inside directory ~/a to directory ~/b
+cp ~/a/* ~/b
+
+List all fies in b
+ls ~/b
+
+Copy the directory ~/a to a new path, ~/c
+cp -r ~/a ~/c
+
+Remove the directory ~/c
+When removing a directory you must use -r for recursive
+rm -r ~/c
+
+Remove the file ~/b/file.txt
+rm ~/b/file.txt
+
+Remove all txt files in ~/b
+rm ~/b/*.txt
+
+Remove folder a
+rm ~/a
+
+Remove folder b
+rm ~/b
+
